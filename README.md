@@ -3,13 +3,14 @@
 <br> 
 
 
-**如何交流、反馈、参与贡献？** 
-- Git仓库：http://git.oschina.net/babaio/renren-generator
-- 其他项目：http://www.renren.io/open/
-- [编程入门教程](http://www.renren.io)：http://www.renren.io   
-- 官方QQ群：324780204、145799952
-- 如需关注项目最新动态，请Watch、Star项目，同时也是对项目最好的支持
-<br> 
+CREATE TABLE `tb_goods` (
+ `goods_id` bigint NOT NULL AUTO_INCREMENT,
+ `name` varchar(50) COMMENT '商品名',
+ `intro` varchar(500) COMMENT '介绍',
+ `price` decimal(10,2) COMMENT '价格',
+ `num` int COMMENT '数量',
+ PRIMARY KEY (`goods_id`)
+ ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='商品管理';
 
 
  **本地部署**
